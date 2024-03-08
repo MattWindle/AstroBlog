@@ -1,4 +1,7 @@
 ---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+
 const pageTitle = "About Me...";
 
 const identity = {
@@ -14,17 +17,20 @@ const happy = true;
 const finished = true ;
 const goal = 3;
 
+const skillColor = "navy";
+
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
     <h1>{pageTitle}</h1>
     <p>Here are a few facts about me:</p>
     <ul>
@@ -36,7 +42,7 @@ const goal = 3;
     </ul>
     <p>My skills are:</p>
     <ul>
-      {skills.map((skill) => <li>{skill}</li>)}
+      {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
 
     {happy && <p>I am happy to be learning Astro!</p>}
