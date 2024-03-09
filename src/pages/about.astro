@@ -3,51 +3,43 @@ import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Me";
-
-const identity = {
-  firstName: "Matt",
-  country: "England",
-  occupation: "Web Developer",
-  hobbies: ["Coding", "Walking", "Cooking"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
-
-const happy = true;
-const finished = true;
-const goal = 3;
-
-const skillColor = "navy";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>Here are a few facts about me:</p>
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
-        </li>
-      )
-    }
-  </ul>
-  <p>My skills are:</p>
-  <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
+  <div class="mx-auto max-w-7xl px-4 py-8">
+    <div class="flex justify-center gap-8">
+      <div>
+        <h1 class="mb-4 text-3xl font-bold">About Matt Windle</h1>
+        <div class="max-w-prose">
+          <p class="text-gray-700">
+            Hi there! I'm Matt Windle, a passionate front-end developer based in
+            Burnley. My journey in web development has led me to focus on
+            learning cutting-edge front-end frameworks such as React and Astro.
+          </p>
 
-  {happy && <p>I am happy to be learning Astro!</p>}
+          <p class="mt-4 text-gray-700">
+            Currently, I am part of a dynamic team at an e-commerce SaaS
+            company, where my role involves developing a new and intuitive user
+            interface for our clients. This exciting project allows me to
+            leverage my skills in front-end development and contribute to
+            enhancing the user experience for our clients.
+          </p>
 
-  {finished && <p>I finished this tutorial!</p>}
-
-  {
-    goal === 3 ? (
-      <p>My goal is to finish in 3 days.</p>
-    ) : (
-      <p>My goal is not 3 days.</p>
-    )
-  }
+          <p class="mt-4 text-gray-700">
+            Whether it's crafting pixel-perfect designs or diving deep into the
+            world of front-end frameworks, I am dedicated to staying at the
+            forefront of web development trends to deliver high-quality
+            solutions.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://avatars.githubusercontent.com/u/75845698"
+          alt=""
+          class="h-[450px] w-96 rounded-lg object-cover object-center shadow-sm grayscale filter"
+        />
+      </div>
+    </div>
+  </div>
 </BaseLayout>
-

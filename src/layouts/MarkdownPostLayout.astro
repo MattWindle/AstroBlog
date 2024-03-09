@@ -15,17 +15,24 @@ const { frontmatter } = Astro.props;
     <div class="mb-4 flex items-center justify-center gap-4">
       {
         frontmatter.tags.map((tag) => (
-          <p class="rounded-md bg-blue-50 px-2 py-2 text-xs font-semibold capitalize text-blue-800 transition-all hover:bg-blue-100">
-            <a href={`/tags/${tag}`}>{tag}</a>
-          </p>
+          <a
+            href={`/tags/${tag}`}
+            class="rounded-md bg-blue-50 px-2 py-2 text-xs font-semibold capitalize text-blue-800 transition-all hover:bg-blue-100"
+          >
+            {tag}
+          </a>
         ))
       }
     </div>
-    <img
-      src={frontmatter.image.url}
-      alt={frontmatter.image.alt}
-      class="mb-4 h-80 w-full object-cover object-center"
-    />
+    {
+      frontmatter.image.url && (
+        <img
+          src={frontmatter.image.url}
+          alt={frontmatter.image.alt}
+          class="mb-4 h-80 w-full object-cover object-center"
+        />
+      )
+    }
 
     <div
       class="mb-4 flex items-center justify-between border-b border-gray-200 pb-4"
