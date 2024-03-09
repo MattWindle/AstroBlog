@@ -10,7 +10,7 @@ author:
 image:
   url: "https://images.unsplash.com/photo-1550063873-ab792950096b?q=72&w=1024"
   alt: "A screen with JavaScript Code"
-tags: ["astro", "blogging", "learning in public"]
+tags: ["react", "blogging", "learning in public"]
 ---
 
 <p class="text-lg mb-4">Are you a web developer eager to build dynamic and interactive user interfaces? Look no further than React! Developed by Facebook, React has become a popular JavaScript library for creating modern and efficient web applications. In this blog post, we'll explore the basics of React and why it's widely embraced by the developer community.</p>

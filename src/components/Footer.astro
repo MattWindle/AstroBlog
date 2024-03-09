@@ -1,11 +1,33 @@
 ---
 const platform = "github";
 const username = "MattWindle";
-import Social from './Social.astro';
-
+import Social from "./Social.astro";
+const allPosts = await Astro.glob("../pages/posts/*.md");
+const allPages = await Astro.glob("../pages/*.astro");
 ---
 
-<footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
-  <Social platform="twitter" username="matthewwindle26" />
+<footer class="bg-blue-50 px-4 py-8">
+  <div class="mx-auto max-w-5xl">
+    <!-- <ul>
+      {
+        allPages.map((page) => (
+          <li>
+            <a href={page.url}>link</a>
+          </li>
+        ))
+      }
+    </ul> -->
+    <ul>
+      <li class="text-lg font-medium">Blog Posts</li>
+      {
+        allPosts.map((post) => (
+          <li class="w-64 overflow-hidden truncate hover:underline">
+            <a href={post.url} class="">
+              {post.frontmatter.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </footer>
