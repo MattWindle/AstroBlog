@@ -1,15 +1,45 @@
 ---
-import BaseLayout from './BaseLayout.astro';
+import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
 ---
-<BaseLayout pageTitle={frontmatter.title}>
-<p>{frontmatter.pubDate.toString().slice(0,10)}</p>
-<div class="tags">
-  {frontmatter.tags.map((tag) => <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>)}
-</div>
-<p><em>{frontmatter.description}</em></p>
-<p>Written by: {frontmatter.author}</p>
-<img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-<slot />
 
+<BaseLayout pageTitle={frontmatter.title}>
+  <div class="mx-auto max-w-3xl py-8">
+    <h1 class="mb-4 text-5xl font-semibold leading-tight">
+      {frontmatter.title}
+    </h1>
+
+    <div class="mb-4 flex items-center justify-center gap-4">
+      {
+        frontmatter.tags.map((tag) => (
+          <p class="rounded-md bg-blue-50 px-2 py-2 text-xs font-semibold capitalize text-blue-800 transition-all hover:bg-blue-100">
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </p>
+        ))
+      }
+    </div>
+    <img
+      src={frontmatter.image.url}
+      alt={frontmatter.image.alt}
+      class="mb-4 h-80 w-full object-cover object-center"
+    />
+
+    <div
+      class="mb-4 flex items-center justify-between border-b border-gray-200 pb-4"
+    >
+      <div class="flex items-center gap-2">
+        <img
+          src={frontmatter.author.url}
+          alt="Portrait of Author"
+          class="h-10 w-10 rounded-full"
+        />
+        <div>
+          <p class="text-sm font-medium">{frontmatter.author.name}</p>
+          <p class="text-sm text-gray-500">{frontmatter.author.jobTitle}</p>
+        </div>
+      </div>
+      <p class="text-sm text-gray-500">Published: {frontmatter.pubDate}</p>
+    </div>
+    <slot />
+  </div>
 </BaseLayout>
