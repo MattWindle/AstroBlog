@@ -1,4 +1,5 @@
 ---
+pageDescription: "Are you a web developer eager to build dynamic and interactive user interfaces? Look no further than React"
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Understanding the Basics of React: A Beginner's Guide"
 pubDate: "9th March 2024"
