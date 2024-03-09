@@ -3,12 +3,15 @@ import Button from "./Button.astro";
 const { url, title, description, imageUrl } = Astro.props;
 ---
 
-<a href={url} class="flex">
-  <img
-    src={imageUrl}
-    alt={title}
-    class="max-w-[400px] rounded-lg object-cover object-center"
-  />
+<a href={url} class="group flex flex-col">
+  <div class="h-64 overflow-hidden rounded-lg">
+    <img
+      src={imageUrl}
+      alt={title}
+      class="h-full w-full rounded-lg object-cover object-center transition-all group-hover:scale-110"
+    />
+  </div>
+
   <div class="p-4">
     <h2 class="mb-1 text-2xl font-medium">{title}</h2>
     <p class="mb-4 text-gray-500">{description}</p>
