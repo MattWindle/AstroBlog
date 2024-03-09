@@ -7,18 +7,9 @@ const allPages = await Astro.glob("../pages/*.astro");
 ---
 
 <footer class="bg-blue-50 px-4 py-8">
-  <div class="mx-auto max-w-5xl">
-    <!-- <ul>
-      {
-        allPages.map((page) => (
-          <li>
-            <a href={page.url}>link</a>
-          </li>
-        ))
-      }
-    </ul> -->
+  <div class="mx-auto flex max-w-7xl gap-12">
     <ul>
-      <li class="text-lg font-medium">Blog Posts</li>
+      <li class="mb-2 text-lg font-medium">Blog Posts</li>
       {
         allPosts.map((post) => (
           <li class="w-64 overflow-hidden truncate hover:underline">

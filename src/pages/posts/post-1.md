@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Understanding the Basics of React: A Beginner's Guide"
 pubDate: "9th March 2024"
-description: "This is the first post of my new Astro blog."
+description: "Are you a web developer eager to build dynamic and interactive user interfaces? Look no further than React! Developed by Facebook, React has become a popular JavaScript library for creating modern and efficient web applications."
 author:
   url: "https://avatars.githubusercontent.com/u/75845698"
   name: "Matt Windle"
