@@ -1,10 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Home Page";
+const pageDescription =
+  "Matt Windle, a passionate front-end developer based in Burnley";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
   <div class="mx-auto max-w-7xl p-10">
-    <h1 class="text-7xl font-bold">Hi 👋 <br />I'm a Front-End Developer</h1>
+    <h1 class="text-7xl font-bold">
+      Hi 👋 <br />I'm a Front-End Developer...
+    </h1>
   </div>
 </BaseLayout>

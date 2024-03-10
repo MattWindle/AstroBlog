@@ -1,13 +1,14 @@
 ---
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+const pageDescription =
+  "Matt Windle, a passionate front-end developer based in Burnley";
 const pageTitle = "About Me";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
   <div class="mx-auto max-w-7xl px-4 py-8">
-    <div class="flex justify-center gap-8">
+    <div class="flex flex-col-reverse justify-center gap-8 sm:flex-row">
       <div>
         <h1 class="mb-4 text-3xl font-bold">About Matt Windle</h1>
         <div class="max-w-prose">
@@ -33,11 +34,11 @@ const pageTitle = "About Me";
           </p>
         </div>
       </div>
-      <div>
+      <div class="">
         <img
           src="https://avatars.githubusercontent.com/u/75845698"
           alt=""
-          class="h-[450px] w-96 rounded-lg object-cover object-center shadow-sm grayscale filter"
+          class="h-auto w-full max-w-[320px] rounded-lg object-cover object-center shadow-sm grayscale filter md:h-[450px] md:w-96"
         />
       </div>
     </div>

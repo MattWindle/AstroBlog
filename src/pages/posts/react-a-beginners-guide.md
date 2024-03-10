@@ -25,7 +25,7 @@ tags: ["React", "Coding", "JavaScript"]
 <ol class="list-decimal pl-6 text-lg mb-6">
   <li class="mb-4"><strong class="font-bold">Components:</strong><br>
       At the core of React are components, which are reusable and independent pieces of code responsible for rendering a part of the user interface. Components make it easy to manage and maintain complex UI structures by breaking them down into smaller, manageable parts.
-    <pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4"><code class="language-jsx">import React from 'react';
+    <pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4 whitespace-break-spaces"><code class="language-jsx">import React from 'react';
 
 function HelloWorld() {
 return &lt;h1&gt;Hello, World!&lt;/h1&gt;;
@@ -35,12 +35,12 @@ return &lt;h1&gt;Hello, World!&lt;/h1&gt;;
 
   <li class="mb-4"><strong class="font-bold">JSX (JavaScript XML):</strong><br>
       React uses JSX, a syntax extension for JavaScript that allows you to write HTML elements and components in your JavaScript code. It helps in creating more readable and concise code.
-    <pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4"><code class="language-jsx">const element = &lt;h1&gt;Hello, JSX!&lt;/h1&gt;;</code></pre>
+    <pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4 whitespace-break-spaces"><code class="language-jsx">const element = &lt;h1&gt;Hello, JSX!&lt;/h1&gt;;</code></pre>
   </li>
 
   <li class="mb-4"><strong class="font-bold">State and Props:</strong><br>
       React components can have two types of data: state and props. State represents the internal data of a component that can change over time, while props are properties passed to a component from its parent.
-    <pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4"><code class="language-jsx">class Greeting extends React.Component {
+    <pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4 whitespace-break-spaces"><code class="language-jsx">class Greeting extends React.Component {
   constructor(props) {
     super(props);
     this.state = { name: 'John' };
@@ -61,7 +61,7 @@ return &lt;h1&gt;Hello, {this.props.title} {this.state.name}!&lt;/h1&gt;;
 
 <p class="text-lg mb-4">To start building with React, you'll need Node.js and npm (Node Package Manager) installed on your machine. You can create a new React application using the following commands:</p>
 
-<pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4"><code class="language-bash">npx create-react-app my-react-app
+<pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4 whitespace-break-spaces"><code class="language-bash">npx create-react-app my-react-app
 cd my-react-app
 npm start</code></pre>
 
