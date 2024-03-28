@@ -6,9 +6,41 @@ const pageDescription =
 ---
 
 <BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
-  <div class="mx-auto max-w-7xl p-10">
-    <h1 class="text-7xl font-bold">
-      Hi 👋 <br />I'm a Front-End Developer...
-    </h1>
+  <div class="bg-gray-50">
+    <div
+      class="mx-auto flex h-full max-w-7xl items-center justify-center px-4 py-8 lg:py-0"
+    >
+      <div class="md:w-1/2">
+        <h1 class="mb-6 text-7xl font-bold">
+          Matt Windle <br /><span class="text-5xl font-medium"
+            >I'm a Front-End Developer...</span
+          >
+        </h1>
+        <p class="mb-12 text-lg text-gray-500">
+          ...based in the town of Burnley, my passion for web development has
+          taken me on an exhilarating journey through the ever-evolving
+          landscape of technology. As the digital realm continues to evolve,
+          I've made it my mission to stay ahead of the curve by delving into the
+          intricacies of cutting-edge front-end frameworks.
+        </p>
+        <a
+          href=""
+          class="mr-2 inline-block rounded-md border-2 border-blue-100 bg-blue-100 px-6 py-3 text-xl font-semibold text-blue-800 hover:border-blue-200 hover:bg-blue-200"
+          >Download CV</a
+        >
+        <a
+          href=""
+          class="inline-block rounded-md border-2 border-gray-400 px-6 py-3 text-xl font-semibold text-gray-800 hover:border-gray-600"
+          >View Projects</a
+        >
+      </div>
+      <div class="flex h-full w-1/2 items-center justify-center">
+        <img
+          src="/images/profile.jpg"
+          alt=""
+          class="profile-clipmask hidden h-full w-auto object-cover object-center md:block"
+        />
+      </div>
+    </div>
   </div>
 </BaseLayout>
