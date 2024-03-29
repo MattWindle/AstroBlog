@@ -9,13 +9,15 @@ const allProject = await Astro.glob("../pages/projects/*.md");
   <div class="mx-auto flex max-w-7xl justify-between gap-4 px-4 py-8">
     <div class="mx-auto grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2">
       {
-        allProject.map((post) => (
-          <div>
-            <img src={post.frontmatter.image.imageURL} alt="" />
-            <h2>{post.frontmatter.title}</h2>
-            <a href={post.url}>Read post</a>
-          </div>
-        ))
+        allProject.map((post) => {
+          return (
+            <div>
+              <img src={post.frontmatter.image.imageURL} alt="" />
+              <h2>{post.frontmatter.title}</h2>
+              <a href={post.url}>Read post</a>
+            </div>
+          );
+        })
       }
     </div>
   </div>

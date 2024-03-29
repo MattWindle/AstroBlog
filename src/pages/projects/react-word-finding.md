@@ -1,7 +1,7 @@
 ---
 pageTitle: "React - Word Finding App"
 pageDescription: "The page description"
-layout: ../../layouts/ProjectPostLayout.astro
+layout: ../../layouts/PortfolioLayout.astro
 title: "React - Word Finding App"
 liveURL: "https://reactwordfinding.netlify.app/"
 pubDate: "9th March 2024"
@@ -11,5 +11,3 @@ image:
   alt: "A screen with JavaScript Code"
 topics: ["React", "Coding", "JavaScript"]
 ---
-
-<p>This is some content...</p>
