@@ -33,6 +33,7 @@ const { posts } = Astro.props;
             title={post.frontmatter.title}
             description={post.frontmatter.description}
             imageUrl={post.frontmatter.image.url}
+            tags={post.frontmatter.tags}
           />
         ))
       }
