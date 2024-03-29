@@ -20,22 +20,5 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
         ))
       }
     </div>
-    <!-- <aside
-      class="ml-4 hidden min-w-56 flex-shrink-0 border-l border-gray-200 p-4 md:block"
-    >
-      <p class="mb-4 font-medium">Blog Topics</p>
-      <div class="flex flex-col gap-2">
-        {
-          tags.map((tag) => (
-            <a
-              class="self-start rounded-md bg-blue-50 px-2 py-2 text-xs font-semibold capitalize text-blue-800 transition-all hover:bg-blue-100"
-              href={`/tags/${tag}`}
-            >
-              {tag}
-            </a>
-          ))
-        }
-      </div>
-    </aside> -->
   </div>
 </BaseLayout>
