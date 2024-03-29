@@ -11,7 +11,45 @@ const allProject = await Astro.glob("../pages/projects/*.md");
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
         {
           allProject.map((post) => {
-            return <div></div>;
+            return (
+              <div class="p-4">
+                <div class="h-full overflow-hidden rounded-lg border-2 border-gray-200 border-opacity-60">
+                  <img
+                    class="w-full object-cover object-center"
+                    src={post.frontmatter.image.imageURL}
+                    alt="blog"
+                  />
+                  <div class="p-6">
+                    <h1 class="title-font mb-2 text-2xl font-medium text-gray-900">
+                      {post.frontmatter.title}
+                    </h1>
+                    <p class="mb-3 leading-relaxed text-gray-500">
+                      {post.frontmatter.description}
+                    </p>
+                    <div class="flex flex-wrap items-center">
+                      <a
+                        class="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0"
+                        href={post.url}
+                      >
+                        View Project
+                        <svg
+                          class="ml-2 h-4 w-4"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
           })
         }
       </div>
