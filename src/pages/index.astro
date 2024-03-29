@@ -11,7 +11,12 @@ const pageDescription =
     <div
       class="mx-auto flex h-full max-w-7xl items-center justify-center px-4 py-8 [@media(min-width:900px)]:py-0"
     >
-      <div class="md:w-1/2">
+      <div class="[@media(min-width:900px)]:w-1/2">
+        <img
+          src="/images/profile.jpg"
+          alt=""
+          class="mb-4 h-[25%] max-h-[200px] w-full rounded-md object-cover sm:max-h-[300px] [@media(min-width:900px)]:hidden"
+        />
         <h1 class="mb-6 text-5xl font-bold md:text-7xl">
           Matt Windle <br /><span class="text-3xl font-medium md:text-5xl"
             >I'm a Front-End Developer...</span
@@ -35,7 +40,9 @@ const pageDescription =
           >View Projects</a
         >
       </div>
-      <div class="flex h-full w-1/2 items-center justify-center">
+      <div
+        class="flex h-full items-center justify-center [@media(min-width:900px)]:w-1/2"
+      >
         <img
           src="/images/profile.jpg"
           alt=""
