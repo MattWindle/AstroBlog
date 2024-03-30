@@ -14,18 +14,18 @@ image:
 tags: ["React", "Coding", "JavaScript"]
 ---
 
-<p class="text-lg mb-4">Are you a web developer eager to build dynamic and interactive user interfaces? Look no further than React! Developed by Facebook, React has become a popular JavaScript library for creating modern and efficient web applications. In this blog post, we'll explore the basics of React and why it's widely embraced by the developer community.</p>
+<p>Are you a web developer eager to build dynamic and interactive user interfaces? Look no further than React! Developed by Facebook, React has become a popular JavaScript library for creating modern and efficient web applications. In this blog post, we'll explore the basics of React and why it's widely embraced by the developer community.</p>
 
-<h2 class="text-2xl mb-2 font-medium">What is React?</h2>
+<h2>What is React?</h2>
 
-<p class="text-lg mb-4">React is an open-source JavaScript library designed for building user interfaces or UI components, especially for single-page applications where user experience plays a crucial role. It was created by Facebook and is now maintained by a community of developers and organizations.</p>
+<p>React is an open-source JavaScript library designed for building user interfaces or UI components, especially for single-page applications where user experience plays a crucial role. It was created by Facebook and is now maintained by a community of developers and organizations.</p>
 
-<h2 class="text-2xl mb-2 font-medium">Key Concepts</h2>
+<h2>Key Concepts</h2>
 
-<ol class="list-decimal pl-6 text-lg mb-6">
-  <li class="mb-4"><strong class="font-bold">Components:</strong><br>
+<ol>
+  <li><strong>Components:</strong><br>
       At the core of React are components, which are reusable and independent pieces of code responsible for rendering a part of the user interface. Components make it easy to manage and maintain complex UI structures by breaking them down into smaller, manageable parts.
-    <pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4 whitespace-break-spaces"><code class="language-jsx">import React from 'react';
+    <pre><code>import React from 'react';
 
 function HelloWorld() {
 return &lt;h1&gt;Hello, World!&lt;/h1&gt;;
@@ -33,14 +33,14 @@ return &lt;h1&gt;Hello, World!&lt;/h1&gt;;
 
   </li>
 
-  <li class="mb-4"><strong class="font-bold">JSX (JavaScript XML):</strong><br>
+  <li><strong>JSX (JavaScript XML):</strong><br>
       React uses JSX, a syntax extension for JavaScript that allows you to write HTML elements and components in your JavaScript code. It helps in creating more readable and concise code.
-    <pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4 whitespace-break-spaces"><code class="language-jsx">const element = &lt;h1&gt;Hello, JSX!&lt;/h1&gt;;</code></pre>
+    <pre><code>const element = &lt;h1&gt;Hello, JSX!&lt;/h1&gt;;</code></pre>
   </li>
 
-  <li class="mb-4"><strong class="font-bold">State and Props:</strong><br>
+  <li><strong>State and Props:</strong><br>
       React components can have two types of data: state and props. State represents the internal data of a component that can change over time, while props are properties passed to a component from its parent.
-    <pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4 whitespace-break-spaces"><code class="language-jsx">class Greeting extends React.Component {
+    <pre><code>class Greeting extends React.Component {
   constructor(props) {
     super(props);
     this.state = { name: 'John' };
@@ -53,22 +53,22 @@ return &lt;h1&gt;Hello, {this.props.title} {this.state.name}!&lt;/h1&gt;;
   </li>
 </ol>
 
-<h2 class="text-2xl mb-2 font-medium">Virtual DOM</h2>
+<h2>Virtual DOM</h2>
 
-<p class="text-lg mb-4">One of the key features that makes React highly efficient is its use of the Virtual DOM. Instead of directly manipulating the actual DOM (Document Object Model), React creates a virtual representation of it in memory. This allows React to update only the parts of the DOM that have changed, resulting in faster rendering and improved performance.</p>
+<p>One of the key features that makes React highly efficient is its use of the Virtual DOM. Instead of directly manipulating the actual DOM (Document Object Model), React creates a virtual representation of it in memory. This allows React to update only the parts of the DOM that have changed, resulting in faster rendering and improved performance.</p>
 
-<h2 class="text-2xl mb-2 font-medium">Getting Started</h2>
+<h2>Getting Started</h2>
 
-<p class="text-lg mb-4">To start building with React, you'll need Node.js and npm (Node Package Manager) installed on your machine. You can create a new React application using the following commands:</p>
+<p>To start building with React, you'll need Node.js and npm (Node Package Manager) installed on your machine. You can create a new React application using the following commands:</p>
 
-<pre class="bg-slate-800 text-slate-200 p-4 rounded text-sm my-4 whitespace-break-spaces"><code class="language-bash">npx create-react-app my-react-app
+<pre><code>npx create-react-app my-react-app
 cd my-react-app
 npm start</code></pre>
 
-<p class="mb-4">This will set up a new React project and launch a development server. You can then start building your components and explore the rich ecosystem of React libraries and tools.</p>
+<p>This will set up a new React project and launch a development server. You can then start building your components and explore the rich ecosystem of React libraries and tools.</p>
 
-<h2 class="text-2xl mb-2 font-medium">Conclusion</h2>
+<h2>Conclusion</h2>
 
-<p class="text-lg mb-4">In this brief overview, we've touched on the fundamental concepts of React, such as components, JSX, state, and props. React's simplicity, reusability, and performance optimization through the Virtual DOM make it a powerful choice for building modern web applications.</p>
+<p>In this brief overview, we've touched on the fundamental concepts of React, such as components, JSX, state, and props. React's simplicity, reusability, and performance optimization through the Virtual DOM make it a powerful choice for building modern web applications.</p>
 
-<p class="text-lg mb-4">Whether you're a seasoned developer or just starting on your coding journey, React provides a solid foundation for creating engaging and responsive user interfaces. Dive into the React documentation, explore tutorials, and start building your own React applications to unlock the full potential of this versatile JavaScript library. Happy coding!</p>
+<p>Whether you're a seasoned developer or just starting on your coding journey, React provides a solid foundation for creating engaging and responsive user interfaces. Dive into the React documentation, explore tutorials, and start building your own React applications to unlock the full potential of this versatile JavaScript library. Happy coding!</p>
