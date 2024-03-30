@@ -7,7 +7,7 @@ const allProject = await Astro.glob("../pages/projects/*.md");
 
 <BaseLayout pageTitle={pageTitle}>
   <section class="">
-    <div class="mx-auto max-w-7xl px-5 py-4">
+    <div class="mx-auto max-w-7xl py-4">
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
         {
           allProject.map((post) => {

@@ -7,22 +7,27 @@ const pageTitle = "About Me";
 
 <BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
   <div
-    class="mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-4 py-8"
+    class="mx-auto flex w-full max-w-7xl flex-1 flex-col px-4 py-8 md:justify-center"
   >
-    <div class="max-w-3xl lg:-mt-40">
-      <p class="mb-2 text-2xl font-medium text-blue-600">ERROR 404</p>
-      <h1 class="mb-8 text-5xl font-bold md:text-7xl">Page Not Found</h1>
-      <p class="mb-8 text-lg text-gray-500">
-        Looks like this page is playing hide and seek. Unfortunately, it's
-        winning. We've checked high and low, but it's nowhere to be found. While
-        we continue our search, why not explore the rest of our site? Who knows,
-        you might discover something even better!
-      </p>
-      <a
-        href="/"
-        class="text-normal mr-2 inline-block rounded-md border-2 border-blue-100 bg-blue-100 px-4 py-2 font-semibold text-blue-800 transition-all hover:border-blue-200 hover:bg-blue-200 md:px-6 md:py-3 md:text-lg"
-        >Back to homepage</a
-      >
+    <div class="grid gap-8 md:grid-cols-2 md:items-center md:justify-center">
+      <div>
+        <p class="mb-2 text-2xl font-medium text-blue-600">ERROR 404</p>
+        <h1 class="mb-8 text-5xl font-bold md:text-7xl">Page Not Found</h1>
+        <p class="mb-8 text-gray-500 md:text-lg">
+          Looks like this page is playing hide and seek. Unfortunately, it's
+          winning. We've checked high and low, but it's nowhere to be found.
+          While we continue our search, why not explore the rest of our site?
+          Who knows, you might discover something even better!
+        </p>
+        <a
+          href="/"
+          class="text-normal mr-2 inline-block rounded-md border-2 border-blue-100 bg-blue-100 px-4 py-2 font-semibold text-blue-800 transition-all hover:border-blue-200 hover:bg-blue-200 md:px-6 md:py-3 md:text-lg"
+          >Back to homepage</a
+        >
+      </div>
+      <div class="hidden md:block">
+        <img src="/images/404-robot.jpeg" class="w-48 md:w-96 lg:w-full" />
+      </div>
     </div>
   </div>
 </BaseLayout>
