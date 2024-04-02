@@ -9,20 +9,20 @@ const pageDescription =
 <BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
   <div class="bg-gray-50">
     <div
-      class="mx-auto flex h-full max-w-7xl items-center justify-center px-4 py-8 [@media(min-width:900px)]:py-0"
+      class="mx-auto flex h-full max-w-7xl items-center justify-center px-4 py-8 [@media(min-width:800px)]:py-0"
     >
-      <div class="[@media(min-width:900px)]:w-1/2">
+      <div class="[@media(min-width:800px)]:w-1/2">
         <img
           src="/images/profile.jpg"
           alt=""
-          class="mb-4 h-[25%] max-h-[200px] w-full rounded-md object-cover sm:max-h-[300px] [@media(min-width:900px)]:hidden"
+          class="mb-4 h-[25%] max-h-[200px] w-full rounded-md object-cover sm:max-h-[300px] [@media(min-width:800px)]:hidden"
         />
-        <h1 class="mb-6 text-5xl font-bold md:text-7xl">
-          Matt Windle <br /><span class="text-3xl font-medium md:text-5xl"
+        <h1 class="mb-6 text-4xl font-bold md:text-6xl">
+          Matt Windle <br /><span class="text-2xl font-medium md:text-4xl"
             >I'm a Front-End Developer...</span
           >
         </h1>
-        <p class="mb-4 text-sm text-gray-500 md:mb-8">
+        <p class="mb-4 text-sm text-gray-500 md:mb-8 md:text-base">
           ...based in the town of Burnley, my passion for web development has
           taken me on an exhilarating journey through the ever-evolving
           landscape of technology. As the digital realm continues to evolve,
@@ -30,23 +30,24 @@ const pageDescription =
           intricacies of cutting-edge front-end frameworks.
         </p>
         <a
-          href=""
-          class="mr-2 inline-block rounded-md border-2 border-blue-100 bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-800 transition-all hover:border-blue-200 hover:bg-blue-200 md:px-6 md:py-3"
+          href="/files/matthew-windle-web-developer-cv.pdf"
+          download
+          class="mr-2 inline-block rounded-md border-2 border-blue-100 bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-800 transition-all hover:border-blue-200 hover:bg-blue-200 md:px-6 md:py-3 md:text-base"
           >Download CV</a
         >
         <a
-          href=""
-          class="inline-block rounded-md border-2 border-gray-400 px-4 py-2 text-sm font-semibold text-gray-800 transition-all hover:border-gray-600 hover:bg-gray-800 hover:text-gray-50 md:px-6 md:py-3"
+          href="/projects"
+          class="inline-block rounded-md border-2 border-gray-400 px-4 py-2 text-sm font-semibold text-gray-800 transition-all hover:border-gray-600 hover:bg-gray-800 hover:text-gray-50 md:px-6 md:py-3 md:text-base"
           >View Projects</a
         >
       </div>
       <div
-        class="flex h-full items-center justify-center [@media(min-width:900px)]:w-1/2"
+        class="flex h-full items-center justify-center [@media(min-width:800px)]:w-1/2"
       >
         <img
           src="/images/profile.jpg"
           alt=""
-          class="profile-clipmask hidden h-full max-h-[650px] w-auto object-cover object-center [@media(min-width:900px)]:block"
+          class="profile-clipmask hidden h-full max-h-[650px] w-auto object-cover object-center [@media(min-width:800px)]:block"
         />
       </div>
     </div>
@@ -62,7 +63,7 @@ const pageDescription =
         </h2>
 
         <p
-          class="md:text-normal mx-auto max-w-screen-md text-center text-sm text-gray-500"
+          class="mx-auto max-w-screen-md text-center text-sm text-gray-500 md:text-base"
         >
           Throughout my journey as a front-end developer, I've leveraged a
           diverse array of cutting-edge web technologies to craft captivating
